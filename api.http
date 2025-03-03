@@ -1,14 +1,14 @@
 ### Retrieve movies
-GET http://localhost:8010/movies
+GET http://localhost:8080/movies
 
 ### Retrieve movie by id
-GET http://localhost:8010/movies/0
+GET http://localhost:8080/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
 
 ### Retrieve all movies in a genre
-GET http://localhost:8010/movies?genre=action
+GET http://localhost:8080/movies?genre=action
 
 ### Create movie with POST
-POST http://localhost:8010/movies
+POST http://localhost:8080/movies
 Content-Type: application/json
 
 {
@@ -24,9 +24,12 @@ Content-Type: application/json
 }
 
 ### Update movie
-PATCH http://localhost:8010/movies/b6e03689-cccd-478e-8565-d92f40813b13
+PATCH http://localhost:8080/movies/b6e03689-cccd-478e-8565-d92f40813b13
 Content-Type: application/json
 
 {
-    "year": 2004
+    "year": 2025
 }
+
+### Delete movie
+DELETE http://localhost:8080/movies/5ad1a235-0d9c-410a-b32b-220d91689a08
